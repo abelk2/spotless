@@ -169,6 +169,7 @@ public abstract class AbstractSpotlessMojo extends AbstractMojo {
 
 	@Override
 	public final void execute() throws MojoExecutionException {
+		getLog().info("+++ Parallel!!!");
 		if (shouldSkip()) {
 			getLog().info(String.format("Spotless %s skipped", goal));
 			return;
